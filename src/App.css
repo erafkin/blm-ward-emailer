@@ -1,11 +1,7 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -22,11 +18,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20vh;
+  padding-top: 0;
 }
 
 .App-link {
   color: #61dafb;
+  font-size: 12pt;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +35,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.name {
+  margin-bottom: 2vw;
+}
+.dropdown {
+  width: 20vw
+}
+.dropdownContainer{
+  margin-bottom: 2vh;
+
 }
