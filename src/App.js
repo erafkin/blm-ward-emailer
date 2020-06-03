@@ -9,7 +9,7 @@ import Form from './Form';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="main">
         <Form className = 'form'/>
       </header>
     </div>

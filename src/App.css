@@ -9,7 +9,7 @@
   }
 }
 
-.App-header {
+.main {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -18,12 +18,29 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 20vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+
   padding-top: 0;
 }
-
-.App-link {
-  color: #61dafb;
+h1::selection {
+  background-color:  #B3DDF2; /* WebKit/Blink Browsers */
+  color: black;
+}
+h1::-moz-selection {
+  background-color:  #B3DDF2; /* Gecko Browsers */
+  color: black;
+}
+p::selection {
+  background-color:  #B3DDF2; /* WebKit/Blink Browsers */
+  color: black;
+}
+p::-moz-selection {
+  background-color:  #B3DDF2; /* Gecko Browsers */
+  color: black;
+}
+.link {
+  color: #B3DDF2;
   font-size: 12pt;
 }
 
@@ -39,11 +56,33 @@
 
 .name {
   margin-bottom: 2vw;
+  height: 5vh;
+  width: 25vw
+  
+
 }
 .dropdown {
-  width: 20vw
+  width: 25vw;
+  display: inline-block;
+  text-align: center;
+  color: black;
+
 }
 .dropdownContainer{
   margin-bottom: 2vh;
 
+}
+.ward{
+  display: inline-block;
+}
+
+.submit {
+  height: 5vh;
+  background-color: #B3DDF2;
+  font-size: 14pt;
+  color: black;
+  border-radius: 2px;
+  border: 1;
+  border-style: solid;
+  border-color:#B3DDF2;
 }
