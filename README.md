@@ -15,3 +15,6 @@ This uses the Chicago Ward API.
 [Here](https://data.cityofchicago.org/resource/htai-wnw4.json) you can find the raw JSON format of all of the data on all of the Wards.
 To query a specific Ward:
 `https://data.cityofchicago.org/resource/htai-wnw4.json?ward={WARD}`
+
+## Live
+This site is live at [http://email-your-alderman.surge.sh/](http://email-your-alderman.surge.sh/)
