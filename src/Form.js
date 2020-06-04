@@ -50,9 +50,9 @@ class Form extends Component{
         if(this.state.mayor) email += ",letterforthemayor@cityofchicago.org";
         var subject = 'Use of Force Policies';
         var emailBody = `Alderman ${this.state.alderman.substring(0, this.state.alderman.indexOf(','))}${this.state.mayor ? " and Mayor Lightfoot" : ""}, %0D%0A 
-        I am writing to ask you to implement the Use of Force policies laid out by Campaign Zero at https://8cantwait.org/. I live in ward ${this.state.ward} and I care deeply about making our community safer. These policies are simple, common-sense, and data driven. %0D%0A 
+        I am writing to ask you to implement the Use of Force policies laid out by Campaign Zero at https://8cantwait.org/. I live in Ward ${this.state.ward} and I care deeply about making our community safer. These policies are simple, common-sense, and data-driven. %0D%0A 
         I am asking you to enact the following policies: %0D%0A
-            1. Ban of chokeholds and strong holds %0D%0A
+            1. Ban of chokeholds and strongholds %0D%0A
             2. Require warning before shooting %0D%0A
             3. Ban of shooting at moving vehicles %0D%0A
             4. Require comprehensive reporting %0D%0A
