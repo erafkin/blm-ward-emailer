@@ -120,7 +120,7 @@ class Form extends Component{
         const defaultOption = this.state.ward > 0 ? this.state.ward.toString() : "Select ward";
         return(
             <div>
-                                <h1> Email your Alderman. Demand action on police violence. </h1>
+                                <h1> Chicagoans: Email your alderman. Demand action on police violence. </h1>
 
                 <p>
                     According to Campaign Zero, there are 8 simple policies that can decrease police violence by 72%, Chicago implements 4. Chicago's current policies remain inadequate.
