@@ -56,7 +56,7 @@ class Form extends Component{
             2. Require warning before shooting %0D%0A
             3. Ban of shooting at moving vehicles %0D%0A
             4. Require comprehensive reporting %0D%0A
-        Data proves that if you implement these policies, in addition to the other policies already in place in Chicago, we can decrease police violence in our community by 72%. All of these policies can be implemented with your vote on City Council, and I’m asking you not to hesitate to make our city safer.
+        Campaign Zero's data shows that if you implement these policies, in addition to the other policies already in place in Chicago, we can decrease police violence in our community by 72%. All of these policies can be implemented with your vote on City Council, and I’m asking you not to hesitate to make our city safer.
         %0D%0A
         Sincerely, %0D%0A
         ${this.state.name}        
@@ -122,12 +122,18 @@ class Form extends Component{
             <div>
                                 <h1> Email your Alderman. Demand action. </h1>
 
-                <p>Despite continued profiling, harassment, terror, and killing of Black communities, 
-                    local and federal decision-makers continue to invest in the police, 
-                    which leaves Black people vulnerable and our communities no safer. 
+                <p>
+                    According to Campaign Zero, there are 8 simple policies that can decrease police violence by 72%. Chicago's current policies remain inadequate.
+                    Click <a className = 'here' href = 'https://8cantwait.org/' target = '_blank' rel="noopener noreferrer">here</a> for more info.
                 </p>
-                <p>The time has come to defund the police.</p>
-                <p>Aldermen are your representation in City Council. They directly vote on policy regarding police reform and funding, as well as the city budget that funds social services.</p>
+                <p>Demand that City Council implements the following 4 policies to make our city a safer place.</p>
+                <ul>
+                    <li>Ban of chokeholds and strong holds </li>
+                    <li>Require warning before shooting </li>
+                    <li>Ban of shooting at moving vehicles </li>
+                    <li>Require comprehensive reporting  </li>
+                </ul>
+                <p>Aldermen are your representation in City Council. They directly vote on policy regarding police reform and funding.</p>
                 <p>Email yours now:</p>
                 <form onSubmit={this.getWardInfo}> 
                     <label>

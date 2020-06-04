@@ -1,5 +1,3 @@
-//Written by Emma Rafkin 2020
-
 import React from 'react';
 import './App.css';
 import Form from './Form';

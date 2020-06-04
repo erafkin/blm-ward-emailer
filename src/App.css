@@ -20,7 +20,7 @@
   color: white;
   padding-left: 10vh;
   padding-right: 10vh;
-
+  font-size: 16pt;
   padding-top: 0;
 }
 h1::selection {
@@ -43,6 +43,10 @@ p::-moz-selection {
   color: #B3DDF2;
   font-size: 12pt;
 }
+.here {
+  color: #B3DDF2;
+  font-size: 16pt;
+}
 
 
 @keyframes App-logo-spin {
@@ -55,7 +59,7 @@ p::-moz-selection {
 }
 
 .name {
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
   height: 5vh;
   width: 25vw
   
