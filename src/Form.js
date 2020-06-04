@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Dropdown from 'react-dropdown';
 import Select from 'react-select';
 import 'react-dropdown/style.css';
 import axios from 'axios';
@@ -13,6 +12,7 @@ class Form extends Component{
             email: '',
             alderman: '', 
             name: '',
+            mayor: false,
         }
         this.getWardInfo = this.getWardInfo.bind(this);
         this.sendEmail = this.sendEmail.bind(this);
@@ -47,8 +47,20 @@ class Form extends Component{
 
     sendEmail() {
         var email = this.state.email;
-        var subject = 'We Demand Action';
-        var emailBody = `Hi Alderman ${this.state.alderman.substring(0, this.state.alderman.indexOf(','))}, %0D%0A asdf`;
+        if(this.state.mayor) email += ",letterforthemayor@cityofchicago.org";
+        var subject = 'Use of Force Policies';
+        var emailBody = `Alderman ${this.state.alderman.substring(0, this.state.alderman.indexOf(','))}${this.state.mayor ? " and Mayor Lightfoot" : ""}, %0D%0A 
+        I am writing to ask you to implement the Use of Force policies laid out by Campaign Zero at https://8cantwait.org/. I live in ward ${this.state.ward} and I care deeply about making our community safer. These policies are simple, common-sense, and data driven. %0D%0A 
+        I am asking you to enact the following policies: %0D%0A
+            1. Ban of chokeholds and strong holds %0D%0A
+            2. Require warning before shooting %0D%0A
+            3. Ban of shooting at moving vehicles %0D%0A
+            4. Require comprehensive reporting %0D%0A
+        Data proves that if you implement these policies, in addition to the other policies already in place in Chicago, we can decrease police violence in our community by 72%. All of these policies can be implemented with your vote on City Council, and I’m asking you not to hesitate to make our city safer.
+        %0D%0A
+        Sincerely, %0D%0A
+        ${this.state.name}        
+        `;
         document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
     }
 
@@ -139,7 +151,11 @@ class Form extends Component{
                     </a>
                 <br/>
                 <br/>
-                    <input type="submit" value="Write my email" className = 'submit'/>
+                <input type="checkbox" name="mayor" checked={this.state.mayor} onChange={() => {this.setState({mayor: !this.state.mayor})}}/>
+                <label for="mayor"> Include Mayor Lightfoot</label>
+                <br/>
+                <br/>
+                <input type="submit" value="Write my Email" className = 'submit'/>
                 </form>
 
                 <p>Please share with all your friends in Chicago!</p>
