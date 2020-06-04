@@ -123,10 +123,10 @@ class Form extends Component{
                                 <h1> Email your Alderman. Demand action. </h1>
 
                 <p>
-                    According to Campaign Zero, there are 8 simple policies that can decrease police violence by 72%. Chicago's current policies remain inadequate.
+                    According to Campaign Zero, there are 8 simple policies that can decrease police violence by 72%, Chicago implements 4. Chicago's current policies remain inadequate.
                     Click <a className = 'here' href = 'https://8cantwait.org/' target = '_blank' rel="noopener noreferrer">here</a> for more info.
                 </p>
-                <p>Demand that City Council implements the following 4 policies to make our city a safer place.</p>
+                <p>Demand that City Council implement the following 4 policies to make our city a safer place.</p>
                 <ul>
                     <li>Ban of chokeholds and strong holds </li>
                     <li>Require warning before shooting </li>
