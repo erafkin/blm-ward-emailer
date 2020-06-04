@@ -128,7 +128,7 @@ class Form extends Component{
                 </p>
                 <p>Demand that Chicago City Council implement the following 4 policies to make our city a safer place.</p>
                 <ul>
-                    <li>Ban of chokeholds and strong holds </li>
+                    <li>Ban of chokeholds and strongholds </li>
                     <li>Require warning before shooting </li>
                     <li>Ban of shooting at moving vehicles </li>
                     <li>Require comprehensive reporting  </li>
