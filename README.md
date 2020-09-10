@@ -16,5 +16,3 @@ This uses the Chicago Ward API.
 To query a specific Ward:
 `https://data.cityofchicago.org/resource/htai-wnw4.json?ward={WARD}`
 
-## Live
-This site is live at [http://email-your-alderman.surge.sh/](http://email-your-alderman.surge.sh/)
