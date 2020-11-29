@@ -27,10 +27,9 @@ class HairstonForm extends Component{
     render() {
         return(
             <div>
-                {/* <h1>Email your alderman. </h1> */}
-                <p>Aldermen are your representation in City Council. They directly vote on policy regarding police reform and funding.</p>  
+                <p>Aldermen are your representation in City Council. They vote on policy regarding police reform and funding.</p>  
                 <p>On the most recent city budget vote,  Alderwoman Hairston of the 5th Ward voted YES on an anti-Black, pro-police budget.</p>
-                <p>This site generates a template email signed with your name in your default Mail application.</p>
+                <p>This site generates a template email signed with your name in your default Mail application criticizing this decision </p>
                 <p> <a className = 'link'
                         href = 'https://www.chicago.gov/city/en/depts/mayor/iframe/lookup_ward_and_alderman.html' 
                         target = '_blank' 
@@ -46,7 +45,7 @@ class HairstonForm extends Component{
                     <br/>
                     <input type="submit" value="Write my Email" className = 'submit'/>
                 </form>
-                <p>Please share with all your friends in Chicago!</p>
+                <p>Please share with all of your friends in Chicago!</p>
             </div>
         );
     }
