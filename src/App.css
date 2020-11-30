@@ -84,10 +84,11 @@ p::-moz-selection {
 .submit {
   height: 5vh;
   background-color: #B3DDF2;
-  font-size: 14pt;
+  font-size: 16pt;
   color: black;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1;
   border-style: solid;
   border-color:#B3DDF2;
+  text-decoration: none;
 }

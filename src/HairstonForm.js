@@ -7,13 +7,11 @@ class HairstonForm extends Component{
         this.state = {
             name: '',
         }
-        this.sendEmail = this.sendEmail.bind(this);
     }
-
-    sendEmail() {
-        var email = 'Ward05@cityofchicago.org';
-        var subject = 'Budget Vote';
-        var emailBody = `Dear Alderwoman Hairston, %0D%0A         %0D%0A
+    render() {
+        const email = 'Ward05@cityofchicago.org';
+        const subject = 'Budget Vote';
+        const emailBody = `Dear Alderwoman Hairston, %0D%0A         %0D%0A
         When you voted YES on the anti-Black, pro-police budget, you chose to stand with cops, corporations and the Mayor as opposed to with the groundswell of Chicago residents who have been calling for the defunding of the Chicago Police Department and investment in Black and brown communities. %0D%0A
         You had the choice to lead with your espoused progressive ideals and vote NO on the budget. We are disappointed that you instead chose to vote for an immoral budget that increases the portion of the budget allocated for CPD, includes regressive taxes on working class Chicagoans, increases speeding fines, and funds a lethal program that will send armed police to respond to Chicagoans experiencing mental health crises while underfunding a non-police crisis response program. %0D%0A 
         As residents who are deeply committed to the defunding of CPD and investment in life-affirming resources, we will continue to hold you accountable to the Black and brown residents who will be hit hardest by the budget and the continual harm perpetrated by CPD. This fight includes and is not limited to the closure of Homan Square, robust funding for a public mental health crisis response system, and a drastic decrease in police funding in next year’s budget. We are determined to fight for what we know Chicagoans need and deserve. %0D%0A
@@ -21,10 +19,6 @@ class HairstonForm extends Component{
         Sincerely, %0D%0A
         ${this.state.name}        
         `;
-        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
-    }
-
-    render() {
         return(
             <div>
                 <p>Aldermen are your representation in City Council. They vote on policy regarding police reform and funding.</p>  
@@ -43,8 +37,8 @@ class HairstonForm extends Component{
                     </label>
                     <br/>
                     <br/>
-                    <input type="submit" value="Write my Email" className = 'submit'/>
                 </form>
+                <a href={`mailto:${email}?subject=${subject}&body=${emailBody}`} className = "submit">Write my email </a>
                 <p>Please share with all of your friends in Chicago!</p>
             </div>
         );
