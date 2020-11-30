@@ -21,14 +21,14 @@ class HairstonForm extends Component{
         `;
         return(
             <div>
-                <p>Aldermen are your representation in City Council. They vote on policy regarding police reform and funding.</p>  
+                <p>Aldermen are your representation in City Council. They vote to approve or deny our annual budgets, including police and social service funding allocations.</p>  
                 <p>On the most recent city budget vote,  Alderwoman Hairston of the 5th Ward voted YES on an anti-Black, pro-police budget.</p>
-                <p>This site generates a template email signed with your name in your default Mail application criticizing this decision </p>
+                <p>This site generates a template email signed with your name in your default Mail application criticizing this decision. </p>
                 <p> <a className = 'link'
                         href = 'https://www.chicago.gov/city/en/depts/mayor/iframe/lookup_ward_and_alderman.html' 
                         target = '_blank' 
                         rel="noopener noreferrer">
-                            If she is your representative,
+                            If she is your representative (5th Ward),
                     </a> email her now:</p>
                 <form onSubmit={this.sendEmail}> 
                     <label>
