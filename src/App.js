@@ -2,13 +2,11 @@ import React from 'react';
 import './App.css';
 // import Form from './Form';
 import HairstonForm from './HairstonForm';
-
 import ReactGA from 'react-ga';
+ReactGA.initialize('UA-168571845-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
-
-function App() {
-  ReactGA.initialize('UA-168571845-1');
-  ReactGA.pageview(window.location.pathname + window.location.search);
+const App = () => {
   return (
     <div className="App">
       <header className="main">
